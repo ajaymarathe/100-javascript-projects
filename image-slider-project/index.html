@@ -7,6 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image slider using Javascript</title>
   <link rel="stylesheet" href="https://unpkg.com/bootcatch-themes@2.4.0/dist/peace/bootstrap.min.css">
+  <style>
+    #slider{
+      width: 100%;
+      height: 60vh !important;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,9 +22,9 @@
     <div class="row align-items-center justify-content-center" style="height: 100vh;">
       <div class="col-md-10">
         <div class="jumbotron" id="slider">
-          <div class="d-flex justify-content-between">
-            <button class="btn btn-primary" onclick="right()" id="right">right</button>
+          <div class="d-flex justify-content-between border">
             <button class="btn btn-warning" onclick="left()" id="left">left</button>
+            <button class="btn btn-primary" onclick="right()" id="right">right</button>
           </div>
         </div>
       </div>
