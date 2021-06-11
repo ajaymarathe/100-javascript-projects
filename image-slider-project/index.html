@@ -10,9 +10,18 @@
   <style>
     #slider{
       width: 100%;
-      height: 60vh !important;
+      height: 70vh !important;
       background-size: cover;
       background-position: center;
+    }
+    .button-container{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .btn{
+      margin-left: 20 !important;
+      text-transform: uppercase;
     }
   </style>
 </head>
@@ -22,7 +31,7 @@
     <div class="row align-items-center justify-content-center" style="height: 100vh;">
       <div class="col-md-10">
         <div class="jumbotron" id="slider">
-          <div class="d-flex justify-content-between border">
+          <div class="button-container">
             <button class="btn btn-warning" onclick="left()" id="left">left</button>
             <button class="btn btn-primary" onclick="right()" id="right">right</button>
           </div>
