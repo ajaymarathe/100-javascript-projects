@@ -1,27 +1,10 @@
-const answerContainer = document.querySelector('#answerContainer');
-console.log('answer:', answerContainer);
-const buttons = document.querySelectorAll('.btn');
-console.log('button: ', buttons);
+(function(){
 
-const performAction = buttons.forEach((button) => {
-  console.log('button2:', button)
-  button.addEventListener('click', function (e) {
-    console.log('hello', e);
-    console.log('classnames:L ', e.target.className.includes('erase'));
-    let buttonType = e.target.className;
-    console.log('btnType:', buttonType);
-    if (buttonType.includes('erase')) {
-      console.log(true);
-    }else if(buttonType.includes('add')){
-      console.log('add');
-      addActionToAnswerComponent('+');
-    }else if(buttonType.includes('one')){
-      addActionToAnswerComponent(1);
-    }
-  })
+  // select all main containers
+  let screen = document.querySelector('.screen');
+  let buttons = document.querySelectorAll('.btn');
+  let clearButton = document.querySelector('.btn-clear');
+  let equal = document.querySelector('.btn-equal');
+
+  // Get data from number buttons that are clicked.
 })
-
-function addActionToAnswerComponent(value) {
-  console.log('actionToAnswerComponent: ', value);
-  answerContainer.textContent = value;
-}
